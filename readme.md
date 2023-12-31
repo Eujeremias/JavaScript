@@ -13,8 +13,28 @@ Aqui será tratados alguns tópicos importantes da programação com JavaScript.
         let list = {
         name:"Jeremias",
         lastName:"Verissimo",
-        age:"20"
+        age:20
     }
   </code></pre>
 
 * E podemos ter sim uma lista de objetos
+
+  <pre>
+    let person =[
+      {
+        name:"jeremias",
+        lastName:"Verissimo",
+        age:19
+      }
+      {
+        name:"Adriano",
+        lastName:"Norman",
+        age:22
+      }
+      {
+        name:"Henrique",
+        lastName:"Gomes",
+        age:11
+      }
+    ]
+  <code>
