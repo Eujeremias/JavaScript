@@ -60,7 +60,7 @@ Aqui será tratados alguns tópicos importantes da programação com JavaScript.
     1. Push adiciona um item ao final da lista
     2. Pop retira um item ao final da lista
 
-   <pre><code>
+<pre><code>
     let list = [1,2,3]
     list.push(4)//adicionar 4 no fim da lista
     list.pop //remove o item adicionado (4)
@@ -112,3 +112,63 @@ console.log(name1.padEnd(11, "@"));
 const itens = ["Mouse", "Keyboard", "Monitor", "Desktop"];
 console.log(`Itens a serem comprados: ${itens.join(", ")}`);
 </code></pre>
+
+## Repeat
+
+Retorna uma string n vezes. Sendo n dado em valor
+
+<pre><code>
+  let nome = "Jeremias"
+  console.log(nome.repeat(4))
+</code></pre>
+
+## Infinitos parâmetros
+
+```javascript
+const somaInfinita = (...args)=>{
+    total = 0
+    for(let i = 0; i < args.length; i++>){
+      total += args[i]
+    }
+    return total
+  }
+  console.log(somaInfinita(5,6,7,8,9))
+
+  // ==========OU=========
+
+const somaInfinita2 = (...args) => {
+  total = 0;
+  for (num of args) {
+    total += num;
+  }
+  return total;
+};
+console.log(somaInfinita2(1010, 10, 2, 3, 4));
+
+```
+
+É interessante pegarmos os dados de um usuário e exibir na tela. Para isso precisamos atribuir este valor em uma variável e podemos fazer isso das seguintes formas:
+
+```javascript
+
+ let detailsUser ={
+    username: "jeremias",
+    lastname: "verissimo",
+    age: 20
+  }
+
+  //Maneira convencional
+  let username = detailsUser.username
+
+  //Usando o descontrutor
+  let {username,lasname, age} = detailsUser
+  console.log(username)
+</code></pre>
+```
+
+Agora vamos desconstruir um array
+
+```javascript
+let list = ["Jeremias", "Henrique", "Matheus", "João"];
+let nameUsers = [user1, user2, user3, user4];
+```

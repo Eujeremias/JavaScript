@@ -99,3 +99,22 @@ console.log(name1.padEnd(11, "@"));
 // const names = ["Jeremy", "John", "Jackson", "James"];
 const itens = ["Mouse", "Keyboard", "Monitor", "Desktop"];
 console.log(`Itens a serem comprados: ${itens.join(", ")}`);
+
+const somaInfinita = (...args) => {
+  total = 0;
+
+  for (let i = 0; i < args.length; i++) {
+    total += args[i];
+  }
+  return total;
+};
+console.log(somaInfinita(1, 2, 3, 4, 4, 5, 1));
+
+const somaInfinita2 = (...args) => {
+  total = 0;
+  for (num of args) {
+    total += num;
+  }
+  return total;
+};
+console.log(somaInfinita2(1010, 10, 2, 3, 4));
