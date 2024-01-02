@@ -88,8 +88,9 @@ let lista = ["Jeremias", "Henrique", "Leandro", "Luiza"];
 // console.log(lista.slice(-2)); // retorna dos últimos 2 itens
 console.log(lista.slice(1, 2)); // primeiro valor será onde começará a contagem. Já o segundo o último.
 
+## padStart | padEnd | split
+
 <pre><code>
-  // padStart | padEnd | split
 
 //split transoforma uma string em array, tendo como parâmetro o que as separa como frase
 const frase = "Fui a casa do meu amigo e comi batata frita";
