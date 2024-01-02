@@ -83,10 +83,14 @@ O legal é que podemos ver o úlitmo item removido pelo pop. Veja o exemplo:
 
 ## Slice
 
+<pre><code>
+
 let lista = ["Jeremias", "Henrique", "Leandro", "Luiza"];
 // console.log(lista.slice(1)); //retorna os elementos a partir do indice 1 até o final
 // console.log(lista.slice(-2)); // retorna dos últimos 2 itens
 console.log(lista.slice(1, 2)); // primeiro valor será onde começará a contagem. Já o segundo o último.
+
+</code></pre>
 
 ## padStart | padEnd | split
 
