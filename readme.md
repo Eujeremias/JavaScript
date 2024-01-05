@@ -150,20 +150,18 @@ console.log(somaInfinita2(1010, 10, 2, 3, 4));
 É interessante pegarmos os dados de um usuário e exibir na tela. Para isso precisamos atribuir este valor em uma variável e podemos fazer isso das seguintes formas:
 
 ```javascript
+let detailsUser = {
+  username: "jeremias",
+  lastname: "verissimo",
+  age: 20,
+};
 
- let detailsUser ={
-    username: "jeremias",
-    lastname: "verissimo",
-    age: 20
-  }
+//Maneira convencional
+let username = detailsUser.username;
 
-  //Maneira convencional
-  let username = detailsUser.username
-
-  //Usando o descontrutor
-  let {username,lasname, age} = detailsUser
-  console.log(username)
-</code></pre>
+//Usando o descontrutor
+let { username, lasname, age } = detailsUser;
+console.log(username);
 ```
 
 Agora vamos desconstruir um array
@@ -171,4 +169,5 @@ Agora vamos desconstruir um array
 ```javascript
 let list = ["Jeremias", "Henrique", "Matheus", "João"];
 let nameUsers = [user1, user2, user3, user4];
+console.log(user1); //será mostradado o primeiro nome
 ```

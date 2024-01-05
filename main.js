@@ -63,58 +63,12 @@
 // // ======POP | PUSH============
 // let list = [1, 2, 3];
 // list.push(4); //adicionar 4 no fim da lista
-// list.pop(); //remove o útimo item (4)
 
-// let removidos = list.pop();
-// console.log(removidos);
+const myJson = '{"name": "jeremias", "lastname": "verissimo", "age": "20"}';
+console.log(myJson);
 
-// console.log(list);
+const objectjSON = JSON.parse(myJson);
+console.log(objectjSON);
 
-// //SHIFT | UNSHIFT
-
-// let letters = ["a", "b", "c"];
-// letters.unshift("d");
-// letters.shift(); // remove o primeiro da lista (d)
-// console.log(letters);
-
-// Slice -
-let testeSlice = ["a", "b", "c", "d", "e", "f"];
-const subArray = testeSlice.slice(0, 7);
-console.log(subArray);
-
-// padStart | padEnd | split
-
-//split transoforma uma string em array, tendo como parâmetro o que as separa como frase
-const frase = "Fui a casa do meu amigo e comi batata frita";
-console.log(frase.split(" ")); //string de espaçamento que indica espaço entre as palavras
-
-// padStart e padEnd acrescenta caracteres antes e no fim de uma string
-
-const name = "jeremias";
-const name1 = name.padStart(10, "@");
-
-console.log(name1.padEnd(11, "@"));
-
-//Split faz o contrário do split, transforma um array em string
-// const names = ["Jeremy", "John", "Jackson", "James"];
-const itens = ["Mouse", "Keyboard", "Monitor", "Desktop"];
-console.log(`Itens a serem comprados: ${itens.join(", ")}`);
-
-const somaInfinita = (...args) => {
-  total = 0;
-
-  for (let i = 0; i < args.length; i++) {
-    total += args[i];
-  }
-  return total;
-};
-console.log(somaInfinita(1, 2, 3, 4, 4, 5, 1));
-
-const somaInfinita2 = (...args) => {
-  total = 0;
-  for (num of args) {
-    total += num;
-  }
-  return total;
-};
-console.log(somaInfinita2(1010, 10, 2, 3, 4));
+const toString = JSON.stringify(objectjSON);
+console.log(toString);
